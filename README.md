@@ -1,2 +1,2 @@
-# Hangman-Game
-Live Preview: https://victorwltsang.github.io/Hangman-Game/
+# Crystals Collector Game 
+Live Preview: https://victorwltsang.github.io/week-4-game/
