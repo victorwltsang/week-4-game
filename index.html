@@ -6,10 +6,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Crystal Collector Game | Victor Tsang</title>
-        <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
     </head>
+
     <body>
+        <div class="flex-container">
+            <header>
+                <h1> Crazy Crystals Collector </h1>
+            </header>
+            <div class="wrapper">
+                <aside class="sidebar column">
+                    <div class="scoreKeeper">
+                        <h2 class="scores">WINS : <span id="win"></span></h2>
+                        <h2 class="scores">LOSS : <span id="loss"></span></h2>
+                    </div>
+                    <div class="instructions">
+                        <h1>Objective </h1>
+                        <p>Objective of the game is to get to the target point </p>
+                        <p>There are four crystals and each of them have a hidden value </p>
+                        <p> Each time when the game starts, the value of the crystals will change.</p>
+                        <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+                    </div>
+                </aside>
+                <main class="content">
+
+                    <div id="target" class="points">
+                        <h2 class="scores">Target Point : <span id="targetPoint"></span></h2>
+                        <h2 class="scores">Current Point : <span id="currentPoint"></span></h2>
+
+
+                    </div>
+                    <div id="crystals" class="crystal">
+
+                        <img class="gem ruby" src="./assets/images/ruby.png" alt="Ruby" />
+                        <img class="gem saphire" src="./assets/images/saphire.png" alt="Saphire" />
+                        <img class="gem amethyst" src="./assets/images/amethyst.png" alt="Amethyst" />
+                        <img class="gem obsidian" src="./assets/images/obsidian.png" alt="Obsidian" />
+
+
+                    </div>
+
+                </main>
+            </div>
+
+        </div>
 
 
         <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>

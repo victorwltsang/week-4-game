@@ -1,0 +1,117 @@
+/** {
+    background-color: rgba(0, 0, 0, .10) !important;
+    border: 1px solid red !important;
+}*/
+
+body {
+    font-family: Helvetica;
+    font-size: 100%;
+    background: url("../images/background.jpg") no-repeat fixed center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 1.2em;
+}
+
+.flex-container {
+    display: flex;
+    min-height: 90vh;
+    flex-direction: column;
+    max-width: 70%;
+    margin: 5vh auto;
+    background-color: rgba(255, 255, 255, .40);
+    border-radius: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex: 1;
+}
+
+.column {
+    flex: 0 0 30%;
+}
+
+.sidebar, .content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .20);
+}
+
+.content {
+    flex: 1;
+    background-color: rgba(255, 255, 255, .40);
+}
+
+header {
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #d11434;
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+}
+
+.scoreKeeper, .instructions, .points {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.scoreKeeper {
+    background-color: rgba(255, 235, 65, 0.90);
+    margin-bottom: auto;
+}
+
+.scores {
+    margin-bottom: .8em;
+}
+
+.instructions {
+    margin-top: auto;
+    background-color: rgba(255, 235, 65, 0.90);
+}
+
+.instructions h1 {
+    text-align: center;
+    color: #d11434;
+    margin-bottom: 1.1em;
+}
+
+.points {
+    background-color: rgba(255, 255, 255, .70);
+}
+
+.crystal {
+    margin-top: auto;
+    /*remove margin-bottom to stop centering */
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gem {
+    cursor: pointer;
+    padding: 15px;
+    max-height: 100px;
+    background-color: rgba(0, 0, 0, 0.20);
+    box-shadow: 10px 10px 5px #888;
+}
+
+.gem:active {
+    transform: translateY(4px);
+    box-shadow: 5px 5px 5px #666;
+}
