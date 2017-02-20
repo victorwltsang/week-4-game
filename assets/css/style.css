@@ -4,12 +4,14 @@
 }*/
 
 body {
-    font-family: Helvetica;
+    font-family: 'Roboto', sans-serif;
     font-size: 100%;
-    background: url("../images/background.jpg") no-repeat fixed center;
+    background: url("../images/bg-2.png") no-repeat fixed center;
+    overflow: hidden;
 }
 
 h1 {
+    font-family: 'Gloria Hallelujah', cursive;
     font-size: 40px;
 }
 
@@ -60,7 +62,7 @@ header {
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 48px;
     color: #d11434;
     text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
 }
@@ -114,4 +116,20 @@ header h1 {
 .gem:active {
     transform: translateY(4px);
     box-shadow: 5px 5px 5px #666;
+}
+
+#cloud {
+    position: absolute;
+    top: 35%;
+    right: -300px;
+    z-index: -3;
+    width: 20%;
+}
+
+#cloud2 {
+    position: absolute;
+    top: 2%;
+    right: -250px;
+    z-index: -3;
+    width: 10%;
 }

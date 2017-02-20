@@ -16,6 +16,7 @@ $(document).ready(function() {
         targetPoint = $("#targetPoint"),
         currentPoint = $("#currentPoint");
 
+
     //global variables
     var currPoint = 0,
         randomPoint = 0,
@@ -80,6 +81,16 @@ $(document).ready(function() {
 
     });
 
+    TweenMax.to(cloud, 60, {
+        left: "-500px",
+        repeat: -1
+
+    });
+    TweenMax.to(cloud2, 30, {
+        left: "-500px",
+        repeat: -1
+
+    });
 
 
 
