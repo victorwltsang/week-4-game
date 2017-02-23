@@ -133,3 +133,35 @@ header h1 {
     z-index: -3;
     width: 10%;
 }
+
+@media screen and (max-width:1360px) {
+    .flex-container {
+        min-height: 80vh;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .instructions {
+        display: none;
+    }
+    .crystal {
+        margin-top: 30px;
+    }
+    .gem {
+        max-height: 25px;
+    }
+    .sidebar, .content, .wrapper {
+        display: block;
+    }
+    header h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 10px;
+        margin-bottom: 1.2em;
+    }
+}
