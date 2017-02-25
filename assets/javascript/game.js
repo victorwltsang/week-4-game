@@ -62,6 +62,17 @@ $(document).ready(function() {
         btnClick.play();
         currPoint += parseInt($(this).attr("data-value"));
         currentPoint.html(currPoint);
+        var fadeValue = $(this).parent().find(".fading-value");
+        fadeValue.html("+" + $(this).attr("data-value"));
+
+        $(fadeValue).finish().animate({
+            opacity: 1,
+            top: -40
+
+        }, 500, function() {
+            $(this).removeAttr('style');
+        });
+
 
         if (currPoint === randomPoint) {
             winCounter++;

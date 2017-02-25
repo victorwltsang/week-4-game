@@ -28,7 +28,7 @@ p {
     display: flex;
     min-height: 80vh;
     flex-direction: column;
-    max-width: 90%;
+    max-width: 80%;
     margin: 10vh auto;
     background-color: rgba(255, 255, 255, .40);
     border-radius: 10px;
@@ -101,14 +101,29 @@ header h1 {
     /*remove margin-bottom to stop centering */
     margin-bottom: auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.fading-value {
+    text-align: center;
+    width: 100%;
+    color: #888;
+    font-size: 110%;
+    position: absolute;
+    opacity: 0;
+}
+
+.gem-wrapper {
+    position: relative;
+    flex: 1;
+    margin: 3%;
+    /* need some space ?*/
 }
 
 .gem {
     cursor: pointer;
-    padding: 15px;
-    max-height: 100px;
+    padding: 5px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.20);
     box-shadow: 10px 10px 5px #888;
 }
@@ -136,20 +151,33 @@ header h1 {
 
 @media screen and (max-width:1360px) {
     .flex-container {
-        min-height: 80vh;
+        max-width: 90%;
         margin: 0 auto;
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:768px) {
+    header h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+        margin-bottom: 1.2em;
+    }
+    .column {
+        flex: 0 0 10%;
+    }
+}
+
+@media screen and (max-width:600px) {
     .instructions {
         display: none;
     }
     .crystal {
         margin-top: 30px;
-    }
-    .gem {
-        max-height: 25px;
     }
     .sidebar, .content, .wrapper {
         display: block;
