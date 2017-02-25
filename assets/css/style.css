@@ -67,7 +67,7 @@ header h1 {
     text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
 }
 
-.scoreKeeper, .instructions, .instructions-mobile, .points {
+.scoreKeeper, .instructions, .points {
     padding: 15px;
     border-radius: 5px;
 }
@@ -81,24 +81,15 @@ header h1 {
     margin-bottom: .8em;
 }
 
-.instructions, .instructions-mobile {
+.instructions {
     margin-top: auto;
     background-color: rgba(255, 235, 65, 0.90);
 }
 
-.instructions h1, .instructions-mobile h1 {
+.instructions h1 {
     text-align: center;
     color: #d11434;
     margin-bottom: 1em;
-}
-
-.instructions-mobile {
-    margin-top: 8%;
-    display: none;
-}
-
-.instructions-mobile p {
-    text-align: center;
 }
 
 .points {
@@ -168,9 +159,6 @@ header h1 {
     .instructions {
         display: none;
     }
-    .instructions-mobile {
-        display: block;
-    }
     .crystal {
         margin-top: 30px;
     }
@@ -178,7 +166,7 @@ header h1 {
         display: block;
     }
     header h1 {
-        font-size: 30px;
+        font-size: 36px;
     }
     h2 {
         font-size: 18px;
