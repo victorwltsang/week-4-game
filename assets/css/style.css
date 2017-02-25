@@ -67,7 +67,7 @@ header h1 {
     text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
 }
 
-.scoreKeeper, .instructions, .points {
+.scoreKeeper, .instructions, .instructions-mobile, .points {
     padding: 15px;
     border-radius: 5px;
 }
@@ -81,15 +81,24 @@ header h1 {
     margin-bottom: .8em;
 }
 
-.instructions {
+.instructions, .instructions-mobile {
     margin-top: auto;
     background-color: rgba(255, 235, 65, 0.90);
 }
 
-.instructions h1 {
+.instructions h1, .instructions-mobile h1 {
     text-align: center;
     color: #d11434;
-    margin-bottom: 1.1em;
+    margin-bottom: 1em;
+}
+
+.instructions-mobile {
+    margin-top: 8%;
+    display: none;
+}
+
+.instructions-mobile p {
+    text-align: center;
 }
 
 .points {
@@ -108,7 +117,7 @@ header h1 {
     text-align: center;
     width: 100%;
     color: #888;
-    font-size: 110%;
+    font-size: 125%;
     position: absolute;
     opacity: 0;
 }
@@ -117,7 +126,6 @@ header h1 {
     position: relative;
     flex: 1;
     margin: 3%;
-    /* need some space ?*/
 }
 
 .gem {
@@ -156,25 +164,12 @@ header h1 {
     }
 }
 
-@media screen and (max-width:768px) {
-    header h1 {
-        font-size: 30px;
-    }
-    h2 {
-        font-size: 20px;
-    }
-    p {
-        font-size: 14px;
-        margin-bottom: 1.2em;
-    }
-    .column {
-        flex: 0 0 10%;
-    }
-}
-
-@media screen and (max-width:600px) {
+@media screen and (max-width:900px) {
     .instructions {
         display: none;
+    }
+    .instructions-mobile {
+        display: block;
     }
     .crystal {
         margin-top: 30px;
@@ -183,13 +178,13 @@ header h1 {
         display: block;
     }
     header h1 {
-        font-size: 25px;
+        font-size: 30px;
     }
     h2 {
         font-size: 18px;
     }
     p {
-        font-size: 10px;
+        font-size: 14px;
         margin-bottom: 1.2em;
     }
 }
